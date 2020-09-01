@@ -20,6 +20,10 @@
     font-family: var(--font-secundary);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 input{
     padding: .3rem 0 .3rem .5rem;
 }

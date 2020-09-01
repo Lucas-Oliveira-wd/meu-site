@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/projetos.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/orcamento.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -25,7 +26,7 @@
             <span>Fechar</span>
         </div>
 
-        <header>
+        <header id="header">
             <div class="img-wrapper">
                 <img src="img/banner.jpg" alt="">
             </div>
@@ -39,18 +40,18 @@
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="" class="menu-link">Página inicial</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Contatos</a></li>
-                    <li class="menu-item"><a href="" class="menu-link">Orçamento</a></li>
+                    <li class="menu-item"><a href="#header" class="menu-link">Página inicial</a></li>
+                    <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contatos</a></li>
+                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
                 </ul>
             </nav>
             <div class="social-media">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-github-alt"></i></a>
-                <a href=""><i class="fab fa-whatsapp"></i></a>
+                <a target="self" href="https://www.facebook.com/lukas.olliveeira"><i class="fab fa-facebook-f"></i></a>
+                <a target="self" href="https://www.instagram.com/lucasoliveirawebdesigner/?hl=pt-br"><i class="fab fa-instagram"></i></a>
+                <a target="self" href="https://github.com/Lucas-Oliveira-wd"><i class="fab fa-github-alt"></i></a>
+                <a target="self" href="https://api.whatsapp.com/send?phone=5582988785978"><i class="fab fa-whatsapp"></i></a>
             </div>
         </aside>
 
@@ -58,7 +59,7 @@
                         Conhecimentos
         =======================================================================-->
 
-        <section class="section-conhecimentos">
+        <section class="section-conhecimentos" id="conhecimentos">
             <div class="section-header">
                 <h1>Conhecimentos</h1>
                 <div class="titulo-bar"></div>
@@ -128,7 +129,7 @@
                         Projetos
         =======================================================================-->
 
-        <section class="section-projetos">
+        <section class="section-projetos" id="projetos">
             <div class="section-header">
                 <h1>Projetos</h1>
                 <div class="titulo-bar"></div>
@@ -180,7 +181,7 @@
                         Contato
         =======================================================================-->
 
-        <section class="section-contact">
+        <section class="section-contact" id="contato">
             <div class="contact-wrapper">
                 <div class="contact-left"></div>
                 <div class="contact-right">
@@ -207,33 +208,54 @@
         <!--=================================================================================
                         Orçamento
         ==================================================================================-->
-        <section class="section-orcamento">
+        <section class="section-orcamento" id="orcamento">
             <div class="orcamento-wrapper">
                 <h1>Faça um orçamento</h1>
                 <form action="">
-                    <label for="qtd">Qtde de Páginas</label>
-                    <input type="number" min="1" name="qtde" id="qtd">
-                    <label for="js">Preciso de um script JS</label>
-                    <input type="checkbox" name="js" id="js">
-                    <label>Layout</label>
-                    <div class="group-layout">
-                        <div>
-                            <input type="radio" name="layout" id="layout-sim">
-                            <label for="layout-sim">Preciso de um layout</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="layout" id="layout-nao">
-                            <label for="layout-nao">Já tenho um layout</label>
+                    <div class="form-item">
+                        <label for="qtd">Qtde de Páginas</label>
+                        <input type="number" min="1" name="qtde" id="qtd">
+                    </div>    
+                    <div class="form-item">
+                        <label for="js">Preciso de um script JS</label>
+                        <input type="checkbox" name="js" id="js">
+                    </div>
+                    <div class="form-item">   
+                        <label>Layout</label>
+                        <div class="group-layout">
+                            <div>
+                                <input type="radio" name="layout" id="layout-sim">
+                                <label for="layout-sim">Preciso de um layout</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="layout" id="layout-nao">
+                                <label for="layout-nao">Já tenho um layout</label>
+                            </div>
                         </div>
                     </div>
-                    <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
-                    <button type="submit">Enviar</button>
+                    <div class="form-item">    
+                        <label for="prazo">Prazo</label>
+                        <input type="range" name="prazo" id="prazo" min="1" max="20">
+                    </div>   
+                        <label id="preco">R$ 0,00</label>
+                        <button type="submit">Enviar</button>
                 </form>
             </div>
         </section>
 
-
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyraight &copy; 2020, ETECIA DS - Todos os direitos reservados
+                </p>
+                <ul class="social-list">
+                    <li><a target="self" href="https://api.whatsapp.com/send?phone=5582988785978"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a target="self" href="https://www.instagram.com/lucasoliveirawebdesigner/?hl=pt-br"><i class="fab fa-instagram"></i></a></li>
+                    <li><a target="self" href="https://www.facebook.com/lukas.olliveeira"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <a href="#header" id="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
     </div>
 
