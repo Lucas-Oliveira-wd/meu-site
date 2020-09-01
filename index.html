@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylegeral.css">
+    <link rel="stylesheet" href="css/conhecimentos.css">
+    <link rel="stylesheet" href="css/projetos.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/orcamento.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
@@ -50,12 +54,17 @@
             </div>
         </aside>
 
+        <!--=====================================================================
+                        Conhecimentos
+        =======================================================================-->
+
         <section class="section-conhecimentos">
             <div class="section-header">
                 <h1>Conhecimentos</h1>
+                <div class="titulo-bar"></div>
             </div>
             <div class="conhecimentos">
-                <div class="conhecimento">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error mollitia est velit, rerum porro distinctio vitae quo natus, labore, perspiciatis amet ab obcaecati sequi repellat praesentium magni necessitatibus quis consectetur!
+                <div class="conhecimento">
                     <div class="conhecimento-header">
                         <i class="fab fa-html5"></i>
                         <h3>HTML</h3>
@@ -109,8 +118,122 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error mollitia est velit, rerum porro distinctio vitae quo natus, labore, perspiciatis amet ab obcaecati sequi repellat praesentium magni necessitatibus quis consectetur!</p>
                     </div>
                 </div>
+                <div class="img-wrapper">
+                    <img src="img/my-ft-1.jpg" alt="">
+                </div>
             </div>
         </section>
+
+        <!--=====================================================================
+                        Projetos
+        =======================================================================-->
+
+        <section class="section-projetos">
+            <div class="section-header">
+                <h1>Projetos</h1>
+                <div class="titulo-bar"></div>
+            </div>
+            <div class="projetos">
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="img/proj-canistur.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Site da Canistur</h2>
+                        <h3>HTML, CSS, Javascript, PHP, Bootstrap</h3>
+                        <p>Site da Canistur, uma empresa turìstica da região do Sertão</p>
+                        <button>Ir para o site</button>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="img/proj-ergon.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Ergon Engenharia</h2>
+                        <h3>HTML, CSS, Javascript</h3>
+                        <p>Site da Ergon Engenharia, uma empresa de engenharia civil e arquitetura.
+                            Está localizada em Piranhas-AL.
+                        </p>
+
+                        <button>Ir para o site</button>
+                    </div>
+                </div>    
+
+                <div class="card">
+                    <div class="img-wrapper">
+                        <img src="img/proj-radiozueira.png" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Rádio Zueira FM</h2>
+                        <h3>HTML, CSS</h3>
+                        <p>Projeto pessoal que pretendo desenvolver em breve.</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--=====================================================================
+                        Contato
+        =======================================================================-->
+
+        <section class="section-contact">
+            <div class="contact-wrapper">
+                <div class="contact-left"></div>
+                <div class="contact-right">
+                    <h1>Contato</h1>
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="field" id="nome">
+                            <label for="nome" class="field-label">Nome</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="field" id="email">
+                            <label for="email" class="field-label">E-mail</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="field" id="mensagem"></textarea>
+                            <label for="mensagem" class="field-label">Mensagem</label>
+                        </div>
+                        <button type="submit" class="button-contact">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--=================================================================================
+                        Orçamento
+        ==================================================================================-->
+        <section class="section-orcamento">
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form action="">
+                    <label for="qtd">Qtde de Páginas</label>
+                    <input type="number" min="1" name="qtde" id="qtd">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label>Layout</label>
+                    <div class="group-layout">
+                        <div>
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+
 
     </div>
 

@@ -1,0 +1,107 @@
+.section-contact{
+    width: 100%;
+    height: 100vh;
+    background: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,.5);
+}
+
+.contact-left{
+    width: 35%;
+    background: -webkit-linear-gradient(rgba(15,15,15,.6),rgba(22,22,22,.9)),
+    url('../img/envelop.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-right{
+    width: 65%;
+    background: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.section-contact h1{
+    font: normal normal lighter 3rem/3.5rem var(--font-primary);
+    text-align: center;
+    width: 100%;
+    color: #272727;
+    width: 100%;
+}
+
+.section-contact form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.section-contact .field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font: normal normal 400 1.5rem/1.7rem var(--font-secundary);
+    border-bottom: .3rem dashed #636363;
+    outline: none;
+    height: 3rem;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.input-group{
+    position: relative;
+}
+
+.input-group textarea{
+    padding-top: 1rem;
+    max-width: 20rem;
+    max-height: 7rem;
+    min-width: 20rem;
+}
+
+.section-contact .field-label{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font: normal normal 500 1.2rem/ 1.5rem var(--font-secundary);
+    text-transform: uppercase;
+}
+
+.field:focus{
+    border-bottom: .2rem solid var(--color-primary);
+}
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+    color: var(--color-primary);
+}
+
+.button-contact{
+    font-family: var(--font-action);
+    padding: .4rem .6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ededed;
+    text-transform: uppercase;
+    letter-spacing: .18rem;
+    cursor: pointer;
+    background: #f12711;
+    background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+    background: linear-gradient(to bottom, #f5af19, #f12711);
+    border-radius: .22rem;
+    border: none;
+    width: 100%;
+    position: absolute;
+    bottom: 2rem;
+    margin: 0 0 1rem 0;
+}

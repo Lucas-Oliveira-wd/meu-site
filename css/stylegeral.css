@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Mulish", serif;
+    --color-primary: #f12711;
+    --color-primary-lighter: #f46a5b;
+    --color-primary-darker: #b01c0b;
+    --color-primary-almost-white: #fcccc7;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,10 +24,24 @@ input{
     padding: .3rem 0 .3rem .5rem;
 }
 
-:root{
-    --font-primary: "Baloo Da 2", serif;
-    --font-secundary: "Josefin Slab", serif;
-    --font-action: "Mulish", serif;
+button{
+    font-family: var(--font-action);
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ededed;
+    text-transform: uppercase;
+    letter-spacing: .18rem;
+    cursor: pointer;
+    background: #f12711;
+    background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+    background: linear-gradient(to bottom, #f5af19, #f12711);
+    border-radius: .22rem;
+    border: none;
+}
+
+body{
+    font-size: 16px;
 }
 
 .flex{
@@ -28,11 +52,21 @@ input{
     flex-direction: column;
 }
 
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .hamburguer{
     width: 2rem;
     height: 1.6rem;
     position: fixed;
-    z-index: 1;
+    z-index: 15;
     right: 2rem;
     top: 2rem;
     justify-content: space-between;
@@ -89,10 +123,6 @@ input{
     box-shadow: .097rem .097rem 1px #000;
 }
 
-body{
-    font-size: 16px;
-}
-
 header{
     width: 100%;
     height: 100vh;
@@ -100,17 +130,13 @@ header{
     position: relative;
 }
 
-.img-wrapper{
+header .img-wrapper{
     width: 100%;
     height: 100%;
-    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.83);
 }
 
-.img-wrapper img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+header .img-wrapper img{
     opacity: 0.64;
     animation: zoom 20s;
 }
@@ -158,8 +184,8 @@ header{
     letter-spacing: .18rem;
     cursor: pointer;
     background: #f12711;
-    background: -webkit-linear-gradient(to right, #f5af19, #f12711);
-    background: linear-gradient(to right, #f5af19, #f12711);
+    background: -webkit-linear-gradient(to bottom, #f5af19, #f12711);
+    background: linear-gradient(to bottom, #f5af19, #f12711);
     border-radius: .22rem;
     border: none;
     opacity: 0;
@@ -188,7 +214,8 @@ header{
     position: fixed;
     top: 0;
     right: -20rem;
-    transition: all 1s
+    transition: all 1s;
+    z-index: 12;
 }
 
 .show-menu .sidebar{
