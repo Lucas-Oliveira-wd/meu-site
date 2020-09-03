@@ -10,7 +10,7 @@
 .orcamento-wrapper{
     width: 60%;
     height: 100%;
-    background: #ccc;
+    background: #dfdfdf;
     border-radius: .3rem;
     box-shadow:0 .1rem .3rem #00000050;
     position: relative;
@@ -37,6 +37,51 @@
 
 .section-orcamento form .form-item:nth-child(2){
     flex-direction: row;
+}
+
+.form-item i{
+    font-size: 1.3rem;
+    color: var(--color-primary);
+}
+
+.form-item span p{
+    font: normal normal 600 1rem/1.2rem var(--font-secundary);
+    color: #fff;
+    position: relative;
+    top: -1rem;
+    z-index: 5;
+}
+
+.form-item span{
+    max-width: 30rem;
+    position: absolute;
+    right: -10rem;
+    top: 13.5rem;
+    background: #c0c0c0;
+    padding: .2rem .4rem;
+    z-index: 2;
+    display: none;
+}
+
+.form-item #span-layout{
+    right: -3rem;
+    top: 16.5rem;
+}
+
+.form-item i:hover ~ span{
+    display: block !important;
+} 
+
+.form-item span::before{
+    content: '';
+    position: relative;
+    border-top: 1rem solid #c0c0c0;
+    border-right: 5rem solid transparent;
+    border-bottom: 1rem solid transparent;
+    border-left: 5rem solid transparent;
+    z-index: 1;
+    right: 4rem;
+    top: .61rem;
 }
 
 .section-orcamento form input{

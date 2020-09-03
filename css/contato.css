@@ -55,6 +55,7 @@
     height: 3rem;
     padding: 0;
     margin: 1rem 0;
+    transition: all .8s;
 }
 
 .input-group{
@@ -78,6 +79,10 @@
 
 .field:focus{
     border-bottom: .2rem solid var(--color-primary);
+}
+
+label{    
+    transition: all .8s;
 }
 
 .field:focus ~ label{

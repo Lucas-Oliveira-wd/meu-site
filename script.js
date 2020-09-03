@@ -21,8 +21,8 @@ function refreshprice(){
     const laysim = document.querySelector('#layout-sim').checked;
     const prazo = document.querySelector('#prazo').value;
     let preco = qtd * 100;
-    if(temJS) preco *= 1.5;
-    if(laysim) preco *= 2;
-    preco *= (12/prazo);
+    if(temJS && laysim) preco *= 2;
+    else if(temJS || laysim) preco *= 1.5;
+    preco *= 10/(prazo);
     document.querySelector('#preco').innerHTML = `R$ ${preco.toFixed(2)}`;
 }
